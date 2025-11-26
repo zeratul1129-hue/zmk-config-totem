@@ -38,6 +38,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Number7 {
+            bindings = <&kp F13>;
+            key-positions = <15 6>;
+        };
+
+        Number9 {
+            bindings = <&kp F15>;
+            key-positions = <6 17>;
+        };
+
+        QTbet {
+            bindings = <&kp KP_NUMBER_7>;
+            key-positions = <23 13>;
+        };
+
+        Fullbet {
+            bindings = <&kp KP_NUMBER_9>;
+            key-positions = <13 14>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
