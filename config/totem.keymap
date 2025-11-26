@@ -20,10 +20,10 @@
 
         base {
             bindings = <
-           &kp Q  &kp W  &kp E     &kp R  &kp T    &kp F13    &kp F14          &kp F15        &kp O    &kp P
-           &kp A  &kp S  &kp D     &kp F  &kp G    &kp F16    &kp F17          &kp F18        &kp L    &kp SEMI
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp F19    &kp F20          &kp F21        &kp DOT  &kp FSLH  &kp APOS
-                         &kp LGUI  &mo 2  &mo 1    &kp SPACE  &kp RIGHT_SHIFT  &kp RIGHT_ALT
+           &kp Q  &kp W  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F13    &kp F14          &kp F15        &kp O    &kp P
+           &kp A  &kp S  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F16    &kp F17          &kp F18        &kp L    &kp SEMI
+&kp LCTRL  &kp Z  &kp X  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F19    &kp F20          &kp F21        &kp DOT  &kp FSLH  &kp APOS
+                         &kp LGUI         &mo 2            &mo 1              &kp SPACE  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
         };
 
