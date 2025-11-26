@@ -96,10 +96,10 @@
 
         Getting_in_ROOM {
             bindings = <
-        &trans  &trans  &kp RS(F13)  &kp RS(F14)  &kp RS(F15)    &kp RS(F13)  &kp RS(F14)  &kp RS(F15)  &trans  &trans
-        &trans  &trans  &kp RS(F16)  &kp RS(F17)  &kp RS(F18)    &kp RS(F16)  &kp RS(F17)  &kp RS(F18)  &trans  &trans
-&trans  &trans  &trans  &kp RS(F19)  &kp RS(F20)  &trans         &kp RS(F19)  &kp RS(F20)  &trans       &trans  &trans  &trans
-                        &trans       &trans       &kp RS(F20)    &kp RS(F19)  &kp RS(F20)  &trans
+        &trans  &trans  &kp RS(F13)    &kp RS(F14)  &kp RS(F15)    &kp RS(F13)  &kp RS(F14)  &kp RS(F15)    &trans  &trans
+        &trans  &trans  &kp RS(F16)    &kp RS(F17)  &kp RS(F18)    &kp RS(F16)  &kp RS(F17)  &kp RS(F18)    &trans  &trans
+&trans  &trans  &trans  &kp RS(F19)    &kp RS(F20)  &trans         &kp RS(F19)  &kp RS(F20)  &trans         &trans  &trans  &trans
+                        &kp BACKSPACE  &trans       &kp RS(F20)    &kp RS(F19)  &kp RS(F20)  &kp BACKSPACE
             >;
         };
 
@@ -123,10 +123,10 @@
 
         sym_func {
             bindings = <
-         &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6  &kp N7           &kp N8   &kp NUMBER_0  &kp MINUS
-         &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH          &kp F6        &kp F7           &kp F8   &kp F9        &kp F10
-&kp ESC  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp UNDERSCORE    &kp F11       &kp F12          &kp F13  &kp F14       &kp F15    &kp EQUAL
-                                              &trans                 &trans            &trans            &none         &kp RIGHT_SHIFT  &none
+         &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4      &kp NUMBER_5     &kp NUMBER_6   &kp N7           &kp N8   &kp NUMBER_0  &kp MINUS
+         &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH         &kp F6         &kp F7           &kp F8   &kp F9        &kp F10
+&kp ESC  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSPACE    &kp F11        &kp F12          &kp F13  &kp F14       &kp F15    &kp EQUAL
+                                              &trans                 &trans            &trans           &kp BACKSPACE  &kp RIGHT_SHIFT  &none
             >;
         };
 
