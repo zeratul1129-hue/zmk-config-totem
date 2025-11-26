@@ -15,15 +15,56 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        Backslash_and_F: Backslash_and_F {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH &kp F>;
+            label = "BACKSLASH_AND_F";
+        };
+
+        Backslash_and_1: Backslash_and_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH &kp NUMBER_1>;
+            label = "BACKSLASH_AND_1";
+        };
+
+        Backslash_and_2: Backslash_and_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH &kp NUMBER_2>;
+            label = "BACKSLASH_AND_2";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-           &kp Q  &kp W  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F13  &kp F14          &kp F15        &kp O    &kp P
-           &kp A  &kp S  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F16  &kp F17          &kp F18        &kp L    &kp SEMI
-&kp LCTRL  &kp Z  &kp X  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F19  &kp F20          &kp F21        &kp DOT  &kp FSLH  &kp APOS
-                         &kp LGUI         &mo 2            &mo 5              &mo 4    &kp RIGHT_SHIFT  &kp RIGHT_ALT
+           &Backslash_and_F  &kp W  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F13  &kp F14          &kp F15        &kp O    &kp P
+           &Backslash_and_1  &kp S  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F16  &kp F17          &kp F18        &kp L    &kp SEMI
+&kp LCTRL  &Backslash_and_2  &kp X  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F19  &kp F20          &kp F21        &kp DOT  &kp FSLH  &kp APOS
+                                    &kp LGUI         &mo 4            &mo 2              &mo 1    &kp RIGHT_SHIFT  &kp RIGHT_ALT
+            >;
+        };
+
+        Getting_in_ROOM {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &kp RS(F13)  &kp RS(F14)  &kp RS(F15)  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp RS(F16)  &kp RS(F17)  &kp RS(F18)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp RS(F19)  &kp RS(F20)  &trans       &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans       &trans       &trans
+            >;
+        };
+
+        quit_and_login {
+            bindings = <
+        &trans  &trans  &trans  &trans  &kp F24    &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans     &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &kp LC(F19)  &kp LC(F20)  &kp LC(F21)  &trans  &trans  &trans
+                        &trans  &trans  &trans     &trans       &trans       &trans
             >;
         };
 
@@ -53,32 +94,14 @@
                                          &none                 &none             &none    &none         &none         &none
             >;
         };
-
-        layer_4 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp RS(F13)  &kp RS(F14)  &kp RS(F15)  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &kp RS(F16)  &kp RS(F17)  &kp RS(F18)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RS(F19)  &kp RS(F20)  &trans       &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans       &trans       &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LC(F19)  &kp LC(F20)  &kp LC(F21)  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans       &trans       &trans
-            >;
-        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         device {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <3 4>;
+            then-layer = <5>;
         };
     };
 };
