@@ -96,10 +96,10 @@
 
         Getting_in_ROOM {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp RS(F13)  &kp RS(F14)  &kp RS(F15)  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &kp RS(F16)  &kp RS(F17)  &kp RS(F18)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp RS(F19)  &kp RS(F20)  &trans       &trans  &trans  &trans
-                        &trans  &trans  &trans    &kp F19      &kp F20      &trans
+        &trans  &trans  &kp RS(F13)  &kp RS(F14)  &kp RS(F15)    &kp RS(F13)  &kp RS(F14)  &kp RS(F15)  &trans  &trans
+        &trans  &trans  &kp RS(F16)  &kp RS(F17)  &kp RS(F18)    &kp RS(F16)  &kp RS(F17)  &kp RS(F18)  &trans  &trans
+&trans  &trans  &trans  &kp RS(F19)  &kp RS(F20)  &trans         &kp RS(F19)  &kp RS(F20)  &trans       &trans  &trans  &trans
+                        &trans       &trans       &kp RS(F20)    &kp RS(F19)  &kp RS(F20)  &trans
             >;
         };
 
