@@ -105,10 +105,10 @@
 
         Getting_in_ROOM {
             bindings = <
-        &trans  &trans  &Hold_on_Bitch RS(LA(LC(F1))) RS(LC(F1))  &Hold_on_Bitch RS(LA(LC(F2))) RS(LC(F2))  &Hold_on_Bitch RS(LA(LC(F3))) RS(LC(F3))    &Hold_on_Bitch RS(LC(LA(F1))) RS(LC(F1))  &Hold_on_Bitch RS(LC(LA(F2))) RS(LC(F2))                    &Hold_on_Bitch LA(RS(LC(F3))) RS(LC(F3))  &layermove 0 1  &trans
-        &to 0   &trans  &Hold_on_Bitch RS(LA(LC(F4))) RS(F4)      &Hold_on_Bitch RS(LA(LC(F5))) RS(LC(F5))  &Hold_on_Bitch RS(LA(LC(F6))) RS(LC(F6))    &Hold_on_Bitch RS(LA(LC(F4))) RS(LC(F4))  &Hold_on_Bitch RS(LA(LC(F5))) RS(LC(F5))                    &Hold_on_Bitch RS(LA(LC(F6))) RS(LC(F6))  &trans          &trans
-&trans  &trans  &trans  &Hold_on_Bitch RS(LA(LC(F7))) RS(LC(F7))  &Hold_on_Bitch RS(LA(LC(F8))) RS(LC(F8))  &trans                                      &Hold_on_Bitch RS(LA(LC(F7))) RS(LC(F7))  &Hold_on_Bitch RS(LA(LC(F8))) RS(LC(F8))                    &trans                                    &trans          &trans  &trans
-                        &kp BACKSPACE                             &trans                                    &Hold_on_Bitch RS(LA(LC(F8))) RS(LC(F8))    &Hold_on_Bitch RS(LA(LC(F7))) RS(LC(F8))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_8))) RS(LC(KP_NUMBER_8))  &kp BACKSPACE
+        &trans  &trans  &Hold_on_Bitch LA(LS(F13)) LS(F13)  &Hold_on_Bitch LA(LS(F14)) LS(F14)  &Hold_on_Bitch LA(LS(F15)) LS(F15)    &Hold_on_Bitch LA(LS(F13)) LS(F13)  &Hold_on_Bitch LS(LA(F14)) LS(F14)  &Hold_on_Bitch LA(LS(F15)) LS(F15)  &layermove 0 1  &trans
+        &to 0   &trans  &Hold_on_Bitch LA(LS(F16)) LS(F16)  &Hold_on_Bitch LA(LS(F17)) LS(F17)  &Hold_on_Bitch LA(LS(F18)) LS(F18)    &Hold_on_Bitch LA(LS(F16)) LS(F16)  &Hold_on_Bitch LA(LS(F17)) LS(F17)  &Hold_on_Bitch LA(LS(F18)) LS(F18)  &trans          &trans
+&trans  &trans  &trans  &Hold_on_Bitch LA(LS(F19)) LS(F7)   &Hold_on_Bitch LA(LS(F20)) LS(F20)  &trans                                &Hold_on_Bitch LA(LS(F19)) LS(F19)  &Hold_on_Bitch LA(LS(F20)) LS(F20)  &trans                              &trans          &trans  &trans
+                        &kp BACKSPACE                       &trans                              &Hold_on_Bitch LA(LS(F20)) LS(F20)    &Hold_on_Bitch LA(LS(F19)) LS(F19)  &Hold_on_Bitch LA(LS(F20)) LS(F20)  &kp BACKSPACE
             >;
         };
 
