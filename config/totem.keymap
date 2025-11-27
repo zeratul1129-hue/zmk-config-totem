@@ -95,10 +95,10 @@
 
         Getting_in_ROOM {
             bindings = <
-        &trans  &trans  &Hold_on_Bitch RS(LA(F13)) RS(F13)  &Hold_on_Bitch RS(LA(F14)) RS(F14)  &Hold_on_Bitch RS(LA(F15)) RS(F15)    &Hold_on_Bitch RS(LA(F13)) RS(F13)  &Hold_on_Bitch RS(LA(F14)) RS(F14)  &Hold_on_Bitch LA(RS(F15)) RS(F15)  &trans  &trans
-        &trans  &trans  &Hold_on_Bitch RS(LA(F16)) RS(F16)  &Hold_on_Bitch RS(LA(F17)) RS(F17)  &Hold_on_Bitch RS(LA(F18)) RS(F18)    &Hold_on_Bitch RS(LA(F16)) RS(F16)  &Hold_on_Bitch RS(LA(F17)) RS(F17)  &Hold_on_Bitch RS(LA(F18)) RS(F18)  &trans  &trans
-&trans  &trans  &trans  &Hold_on_Bitch RS(LA(F19)) RS(F19)  &Hold_on_Bitch RS(LA(F20)) RS(F20)  &trans                                &Hold_on_Bitch RS(LA(F19)) RS(F19)  &Hold_on_Bitch RS(LA(F20)) RS(F20)  &trans                              &trans  &trans  &trans
-                        &kp BACKSPACE                       &trans                              &Hold_on_Bitch RS(LA(F20)) RS(F20)    &Hold_on_Bitch RS(LA(F19)) RS(F19)  &Hold_on_Bitch RS(LA(F20)) RS(F20)  &kp BACKSPACE
+        &trans  &trans  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_1))) RS(LC(KP_NUMBER_1))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_2))) RS(LC(KP_NUMBER_2))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_3))) RS(LC(KP_NUMBER_3))    &Hold_on_Bitch RS(LC(LA(KP_NUMBER_1))) RS(LC(KP_NUMBER_1))  &Hold_on_Bitch RS(LC(LA(KP_NUMBER_2))) RS(LC(KP_NUMBER_2))  &Hold_on_Bitch LA(RS(LC(KP_NUMBER_3))) RS(LC(KP_NUMBER_3))  &trans  &trans
+        &trans  &trans  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_4))) RS(KP_NUMBER_4)      &Hold_on_Bitch RS(LA(LC(KP_NUMBER_5))) RS(LC(KP_NUMBER_5))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_6))) RS(LC(KP_NUMBER_6))    &Hold_on_Bitch RS(LA(LC(KP_NUMBER_4))) RS(LC(KP_NUMBER_4))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_5))) RS(LC(KP_NUMBER_5))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_6))) RS(LC(KP_NUMBER_6))  &trans  &trans
+&trans  &trans  &trans  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_7))) RS(LC(KP_NUMBER_7))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_8))) RS(LC(KP_NUMBER_8))  &trans                                                        &Hold_on_Bitch RS(LA(LC(KP_NUMBER_7))) RS(LC(KP_NUMBER_7))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_8))) RS(LC(KP_NUMBER_8))  &trans                                                      &trans  &trans  &trans
+                        &kp BACKSPACE                                               &trans                                                      &Hold_on_Bitch RS(LA(LC(KP_NUMBER_8))) RS(LC(KP_NUMBER_8))    &Hold_on_Bitch RS(LA(LC(KP_NUMBER_7))) RS(LC(KP_NUMBER_7))  &Hold_on_Bitch RS(LA(LC(KP_NUMBER_8))) RS(LC(KP_NUMBER_8))  &kp BACKSPACE
             >;
         };
 
