@@ -15,29 +15,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        Backslash_and_F: Backslash_and_F {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSLASH &kp F>;
-            label = "BACKSLASH_AND_F";
-        };
-
-        Backslash_and_1: Backslash_and_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSLASH &kp NUMBER_1>;
-            label = "BACKSLASH_AND_1";
-        };
-
-        Backslash_and_2: Backslash_and_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSLASH &kp NUMBER_2>;
-            label = "BACKSLASH_AND_2";
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -82,24 +59,46 @@
         };
     };
 
+    behaviors {
+        Hold_on_Bitch: a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ah";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+        };
+
+        Long_holding: Long_holding {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONG_HOLDING";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1000>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-               &kp F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F13  &kp F14    &kp F15        &mo 1    &mo 1
-               &kp NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F16  &kp F17    &kp F18        &kp F21  &bt BT_SEL 2
-&kp BACKSLASH  &kp NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F19  &kp F20    &kp F21        &mo 2    &bt BT_SEL 1  &bt BT_SEL 0
-                                             &kp SPACE        &kp NUMBER_0     &mo 2              &kp F19  &kp ENTER  &kp RIGHT_ALT
+               &kp F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &Hold_on_Bitch F13 LA(F13)  &Hold_on_Bitch F14 LA(F14)  &Hold_on_Bitch F15 LA(F15)  &mo 1    &mo 1
+               &kp NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &Hold_on_Bitch F16 F16      &Hold_on_Bitch F17 LA(F17)  &Hold_on_Bitch F18 LA(F18)  &kp F21  &bt BT_SEL 2
+&kp BACKSLASH  &kp NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &Hold_on_Bitch F19 LA(F19)  &Hold_on_Bitch F20 LA(F20)  &Long_holding F21 F22       &mo 2    &bt BT_SEL 1  &bt BT_SEL 0
+                                             &kp SPACE        &kp NUMBER_0     &mo 2              &kp F19                     &kp ENTER                   &kp RIGHT_ALT
             >;
         };
 
         Getting_in_ROOM {
             bindings = <
-        &trans  &trans  &kp RS(F13)    &kp RS(F14)  &kp RS(F15)    &kp RS(F13)  &kp RS(F14)  &kp RS(F15)    &trans  &trans
-        &trans  &trans  &kp RS(F16)    &kp RS(F17)  &kp RS(F18)    &kp RS(F16)  &kp RS(F17)  &kp RS(F18)    &trans  &trans
-&trans  &trans  &trans  &kp RS(F19)    &kp RS(F20)  &trans         &kp RS(F19)  &kp RS(F20)  &trans         &trans  &trans  &trans
-                        &kp BACKSPACE  &trans       &kp RS(F20)    &kp RS(F19)  &kp RS(F20)  &kp BACKSPACE
+        &trans  &trans  &Hold_on_Bitch RS(F13) LA(RS(F13))  &Hold_on_Bitch RS(F14) LA(RS(F14))  &Hold_on_Bitch RS(F15) LA(RS(F15))    &Hold_on_Bitch RS(F13) LA(RS(F13))  &Hold_on_Bitch RS(F14) LA(RS(F14))  &Hold_on_Bitch F15 LA(RS(F15))      &trans  &trans
+        &trans  &trans  &Hold_on_Bitch RS(F16) LA(RS(F16))  &Hold_on_Bitch RS(F17) LA(RS(F17))  &Hold_on_Bitch RS(F18) LA(RS(F18))    &Hold_on_Bitch RS(F16) LA(RS(F16))  &Hold_on_Bitch RS(F17) LA(RS(F17))  &Hold_on_Bitch RS(F18) LA(RS(F18))  &trans  &trans
+&trans  &trans  &trans  &Hold_on_Bitch RS(F19) LA(RS(F19))  &Hold_on_Bitch RS(F20) LA(RS(F20))  &trans                                &Hold_on_Bitch RS(F19) LA(RS(F19))  &Hold_on_Bitch RS(F20) LA(RS(F20))  &trans                              &trans  &trans  &trans
+                        &kp BACKSPACE                       &trans                              &Hold_on_Bitch RS(F20) LA(RS(F20))    &Hold_on_Bitch RS(F19) LA(RS(F19))  &Hold_on_Bitch RS(F20) LA(RS(F20))  &kp BACKSPACE
             >;
         };
 
