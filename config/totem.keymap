@@ -86,9 +86,9 @@
 
         base {
             bindings = <
-               &kp F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &Hold_on_Bitch F13 LA(F13)  &Hold_on_Bitch F14 LA(F14)  &Hold_on_Bitch F15 LA(F15)  &mo 1    &mo 1
-               &kp NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &Hold_on_Bitch F16 F16      &Hold_on_Bitch F17 LA(F17)  &Hold_on_Bitch F18 LA(F18)  &kp F21  &bt BT_SEL 2
-&kp BACKSLASH  &kp NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &Hold_on_Bitch F19 LA(F19)  &Hold_on_Bitch F20 LA(F20)  &Long_holding F21 F22       &mo 2    &bt BT_SEL 1  &bt BT_SEL 0
+               &kp F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &Hold_on_Bitch F13 LA(F13)  &Hold_on_Bitch F14 LA(F14)  &Hold_on_Bitch F15 LA(F15)  &mo 1                   &mo 1
+               &kp NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &Hold_on_Bitch F16 LA(F16)  &Hold_on_Bitch F17 LA(F17)  &Hold_on_Bitch F18 LA(F18)  &Hold_on_Bitch F21 F17  &bt BT_SEL 2
+&kp BACKSLASH  &kp NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &Hold_on_Bitch F19 LA(F19)  &Hold_on_Bitch F20 LA(F20)  &Long_holding F21 F22       &mo 2                   &bt BT_SEL 1  &bt BT_SEL 0
                                              &kp SPACE        &kp NUMBER_0     &mo 2              &kp F19                     &kp ENTER                   &kp RIGHT_ALT
             >;
         };
