@@ -107,7 +107,7 @@
             bindings = <
             &to 3        &trans  &trans  &trans  &kp F24    &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &trans  &trans
             &trans       &trans  &trans  &trans  &trans     &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans  &bt BT_CLR_ALL
-&sys_reset  &bootloader  &trans  &trans  &trans  &trans     &kp LC(F19)  &kp LC(F20)  &kp LC(F21)  &trans  &bt BT_CLR      &to 0
+&sys_reset  &bootloader  &trans  &trans  &trans  &trans     &kp LC(F19)  &kp LC(F20)  &kp F22      &trans  &bt BT_CLR      &to 0
                                  &trans  &trans  &trans     &trans       &trans       &trans
             >;
         };
