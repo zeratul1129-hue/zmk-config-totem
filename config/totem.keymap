@@ -87,9 +87,9 @@
 
         base {
             bindings = <
-               &kp F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F13  &kp F14    &kp F15        &mo 1         &mo 1
-               &kp NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F16  &kp F17    &kp F18        &kp F21       &bt BT_SEL 2
-&kp BACKSLASH  &kp NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F19  &kp F20    &kp F21        &bt BT_SEL 3  &bt BT_SEL 1  &bt BT_CLR
+               &kp F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp F13  &kp F14    &kp F15        &mo 1    &mo 1
+               &kp NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp F16  &kp F17    &kp F18        &kp F21  &bt BT_SEL 2
+&kp BACKSLASH  &kp NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &kp F19  &kp F20    &kp F21        &mo 2    &bt BT_SEL 1  &bt BT_SEL 0
                                              &kp SPACE        &kp NUMBER_0     &mo 2              &kp F19  &kp ENTER  &kp RIGHT_ALT
             >;
         };
@@ -106,8 +106,8 @@
         quit_and_login {
             bindings = <
             &to 3        &trans  &trans  &trans  &kp F24    &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &trans  &trans
-            &trans       &trans  &trans  &trans  &trans     &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans  &trans
-&sys_reset  &bootloader  &trans  &trans  &trans  &trans     &kp LC(F19)  &kp LC(F20)  &kp LC(F21)  &trans  &trans  &to 0
+            &trans       &trans  &trans  &trans  &trans     &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans  &bt BT_CLR_ALL
+&sys_reset  &bootloader  &trans  &trans  &trans  &trans     &kp LC(F19)  &kp LC(F20)  &kp LC(F21)  &trans  &bt BT_CLR      &to 0
                                  &trans  &trans  &trans     &trans       &trans       &trans
             >;
         };
