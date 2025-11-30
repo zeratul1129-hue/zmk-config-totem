@@ -114,10 +114,10 @@
 
         quit_and_login {
             bindings = <
-            &to 3        &trans  &trans           &trans           &kp F24            &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &trans  &trans
-            &trans       &trans  &trans           &kp KP_NUMBER_8  &trans             &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans  &bt BT_CLR_ALL
-&sys_reset  &bootloader  &trans  &kp KP_NUMBER_7  &trans           &kp KP_NUMBER_9    &kp LC(F19)  &kp LC(F20)  &kp F21      &trans  &bt BT_CLR      &to 0
-                                 &trans           &trans           &trans             &kp LC(F19)  &kp LC(F20)  &trans
+            &to 3           &trans  &trans           &trans           &kp F24            &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &trans  &trans
+            &bt BT_CLR_ALL  &trans  &trans           &kp KP_NUMBER_8  &trans             &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans  &bt BT_CLR_ALL
+&sys_reset  &bootloader     &trans  &kp KP_NUMBER_7  &trans           &kp KP_NUMBER_9    &kp LC(F19)  &kp LC(F20)  &kp F21      &trans  &bt BT_CLR      &to 0
+                                    &trans           &trans           &trans             &kp LC(F19)  &kp LC(F20)  &trans
             >;
         };
 
@@ -135,7 +135,7 @@
          &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4      &kp NUMBER_5     &kp NUMBER_6   &kp N7           &kp N8   &kp NUMBER_0  &kp MINUS
          &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH         &kp F6         &kp F7           &kp F8   &kp F9        &kp F10
 &kp ESC  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSPACE    &kp F11        &kp F12          &kp F13  &kp F14       &kp F15    &kp EQUAL
-                                              &trans                 &trans            &trans           &kp BACKSPACE  &kp RIGHT_SHIFT  &none
+                                              &trans                 &trans            &to 0            &kp BACKSPACE  &kp RIGHT_SHIFT  &none
             >;
         };
     };
