@@ -96,9 +96,9 @@
 
         base {
             bindings = <
-               &Long_holding LS(LC(W)) F         &kp LEFT_SHIFT                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &Hold_on_Bitch LA(F13) F13  &Hold_on_Bitch LA(F14) F14  &Hold_on_Bitch LA(F15) F15  &mo 1                       &to 1
-               &Long_holding LS(LC(D)) NUMBER_1  &kp LC(C)                         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &Hold_on_Bitch LA(F16) F16  &Hold_on_Bitch LA(F17) F17  &Hold_on_Bitch LA(F18) F18  &Hold_on_Bitch LA(F17) F17  &bt BT_SEL 2
-&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &Hold_on_Bitch KP_NUMBER_2 LC(V)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &Hold_on_Bitch LA(F19) F19  &Hold_on_Bitch LA(F20) F20  &Long_holding F22 F21       &mo 2                       &bt BT_SEL 1  &bt BT_SEL 0
+               &Long_holding LS(LC(W)) F         &kp LEFT_SHIFT                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &Hold_on_Bitch LA(F13) F13  &Hold_on_Bitch LA(F14) F14  &Hold_on_Bitch LA(F15) F15  &mo 1                         &to 1
+               &Long_holding LS(LC(D)) NUMBER_1  &kp LC(C)                         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &Hold_on_Bitch LA(F16) F16  &Hold_on_Bitch LA(F17) F17  &Hold_on_Bitch LA(F18) F18  &Hold_on_Bitch LA(F17) F17    &bt BT_SEL 2
+&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &Hold_on_Bitch KP_NUMBER_2 LC(V)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &Hold_on_Bitch LA(F19) F19  &Hold_on_Bitch LA(F20) F20  &Long_holding F22 F21       &Long_holding F21 KP_NUMLOCK  &bt BT_SEL 1  &bt BT_SEL 0
                                                                                    &kp SPACE        &kp NUMBER_0     &mo 2              &Hold_on_Bitch LA(F19) F19  &Hold_on_Bitch LA(F20) F20  &kp RIGHT_ALT
             >;
         };
