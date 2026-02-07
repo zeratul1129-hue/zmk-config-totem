@@ -98,7 +98,7 @@
             bindings = <
                &Long_holding LS(LC(W)) F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8                 &kp KP_NUMBER_9    &Hold_on_Bitch LA(F13) F13  &Hold_on_Bitch LA(F14) F14  &Hold_on_Bitch LA(F15) F15  &mo 1                         &kp BACKSPACE
                &Long_holding LS(LC(D)) NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5                 &kp KP_NUMBER_6    &Hold_on_Bitch LA(F16) F16  &Hold_on_Bitch LA(F17) F17  &Hold_on_Bitch LA(F18) F18  &Hold_on_Bitch LA(F17) F17    &bt BT_SEL 2
-&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2                 &kp KP_NUMBER_3    &Hold_on_Bitch LA(F19) F19  &Hold_on_Bitch LA(F20) F20  &Long_holding F22 F21       &Long_holding F21 KP_NUMLOCK  &bt BT_SEL 1   &bt BT_SEL 0
+&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2                 &kp KP_NUMBER_3    &Hold_on_Bitch LA(F19) F19  &Hold_on_Bitch LA(F20) F20  &Long_holding F22 F21       &Long_holding F21 KP_NUMLOCK  &to 5          &bt BT_SEL 0
                                                                  &kp ENTER        &Hold_on_Bitch DOT KP_NUMBER_0  &mo 2              &Hold_on_Bitch LA(F19) F19  &Hold_on_Bitch LA(F20) F20  &kp RIGHT_ALT
             >;
         };
@@ -143,7 +143,7 @@
             bindings = <
               &kp ESCAPE  &kp TAB                               &kp Q                                 &kp W                                 &kp E                                   &trans  &trans  &trans  &trans  &trans
               &trans      &kp LEFT_SHIFT                        &kp A                                 &kp S                                 &kp D                                   &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ALT  &mo 4       &Hold_on_Bitch LA(NUMBER_1) NUMBER_1  &Hold_on_Bitch LA(NUMBER_2) NUMBER_2  &Hold_on_Bitch LA(NUMBER_3) NUMBER_3  &Hold_on_Bitch LA(NUMBER_4) NUMBER_4    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &mo 4       &Hold_on_Bitch LA(NUMBER_1) NUMBER_1  &Hold_on_Bitch LA(NUMBER_2) NUMBER_2  &Hold_on_Bitch LA(NUMBER_3) NUMBER_3  &Hold_on_Bitch LA(NUMBER_4) NUMBER_4    &trans  &trans  &trans  &trans  &trans  &to 0
                                                                 &kp R                                 &kp B                                 &kp F                                   &trans  &trans  &trans
             >;
         };
