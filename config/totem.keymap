@@ -130,9 +130,9 @@
         endfield {
             bindings = <
               &kp ESCAPE  &kp TAB                               &kp Q                                 &kp W                                 &kp E                                   &trans  &trans  &trans  &trans  &trans
-              &trans      &kp LEFT_SHIFT                        &kp A                                 &kp S                                 &kp D                                   &trans  &trans  &trans  &trans  &trans
+              &kp B       &kp LEFT_SHIFT                        &kp A                                 &kp S                                 &kp D                                   &trans  &trans  &trans  &trans  &trans
 &kp LEFT_ALT  &mo 4       &Hold_on_Bitch LA(NUMBER_1) NUMBER_1  &Hold_on_Bitch LA(NUMBER_2) NUMBER_2  &Hold_on_Bitch LA(NUMBER_3) NUMBER_3  &Hold_on_Bitch LA(NUMBER_4) NUMBER_4    &trans  &trans  &trans  &trans  &trans  &to 0
-                                                                &kp R                                 &kp B                                 &kp F                                   &trans  &trans  &trans
+                                                                &kp R                                 &kp SPACE                             &kp F                                   &trans  &trans  &trans
             >;
         };
     };
