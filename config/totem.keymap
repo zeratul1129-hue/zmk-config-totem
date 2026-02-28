@@ -93,19 +93,19 @@
 
         base {
             bindings = <
-               &Long_holding LS(LC(W)) F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8                 &kp KP_NUMBER_9    &Hold_on_Bitch LA(RC(F1)) RC(F1)  &Hold_on_Bitch LA(RC(F2)) RC(F2)  &Hold_on_Bitch LA(RC(F3)) RC(F3)  &mo 1                         &kp BACKSPACE
-               &Long_holding LS(LC(D)) NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5                 &kp KP_NUMBER_6    &Hold_on_Bitch LA(RC(F4)) RC(F4)  &Hold_on_Bitch LA(RC(F5)) RC(F5)  &Hold_on_Bitch LA(RC(F6)) RC(F6)  &Hold_on_Bitch LA(RC(F5)) RC(F5)    &bt BT_SEL 2
-&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2                 &kp KP_NUMBER_3    &Hold_on_Bitch LA(RC(F7)) RC(F7)  &Hold_on_Bitch LA(RC(F8)) RC(F8)  &Long_holding RC(F10) RC(F9)      &Long_holding RC(F9) KP_NUMLOCK  &to 5          &none
+               &Long_holding LS(LC(W)) F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8                 &kp KP_NUMBER_9    &Hold_on_Bitch LA(RC(F1)) RC(F1)  &Hold_on_Bitch LA(RC(F2)) RC(F2)  &Hold_on_Bitch LA(RC(F3)) RC(F3)  &mo 1                             &kp BACKSPACE
+               &Long_holding LS(LC(D)) NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5                 &kp KP_NUMBER_6    &Hold_on_Bitch LA(RC(F4)) RC(F4)  &Hold_on_Bitch LA(RC(F5)) RC(F5)  &Hold_on_Bitch LA(RC(F6)) RC(F6)  &Hold_on_Bitch LA(RC(F5)) RC(F5)  &bt BT_SEL 2
+&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2                 &kp KP_NUMBER_3    &Hold_on_Bitch LA(RC(F7)) RC(F7)  &Hold_on_Bitch LA(RC(F8)) RC(F8)  &Long_holding RC(F10) RC(F9)      &Long_holding RC(F9) KP_NUMLOCK   &to 5          &none
                                                                  &kp ENTER        &Hold_on_Bitch DOT KP_NUMBER_0  &mo 2              &Hold_on_Bitch LA(RC(F7)) RC(F7)  &Hold_on_Bitch LA(RC(F8)) RC(F8)  &kp RIGHT_ALT
             >;
         };
 
         Getting_in_ROOM {
             bindings = <
-        &trans  &trans  &Hold_on_Bitch LA(LS(RC(F1))) LS(RC(F1))  &Hold_on_Bitch LA(LS(RC(F2))) LS(RC(F2))  &Hold_on_Bitch LA(LS(RC(F3))) LS(RC(F3))    &Hold_on_Bitch LA(LS(RC(F1))) LS(RC(F1))  &Hold_on_Bitch LS(LA(RC(F2))) LS(RC(F2))  &Hold_on_Bitch LA(LS(RC(F3))) LS(RC(F3))  &layermove 0 1  &trans
-        &to 0   &trans  &Hold_on_Bitch LA(LS(RC(F4))) LS(RC(F4))  &Hold_on_Bitch LA(LS(RC(F5))) LS(RC(F5))  &Hold_on_Bitch LA(LS(RC(F6))) LS(RC(F6))    &Hold_on_Bitch LA(LS(RC(F4))) LS(RC(F4))  &Hold_on_Bitch LA(LS(RC(F5))) LS(RC(F5))  &Hold_on_Bitch LA(LS(RC(F6))) LS(RC(F6))  &trans          &trans
-&trans  &trans  &trans  &Hold_on_Bitch LA(LS(RC(F7))) LS(F7)      &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &trans                                      &Hold_on_Bitch LA(LS(RC(F7))) LS(RC(F7))  &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &kp RC(F9)                                &trans          &trans  &trans
-                        &kp BACKSPACE                             &trans                                    &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))    &Hold_on_Bitch LA(LS(RC(F7))) LS(RC(F7))  &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &kp BACKSPACE
+            &trans  &trans  &Hold_on_Bitch LA(LS(RC(F1))) LS(RC(F1))  &Hold_on_Bitch LA(LS(RC(F2))) LS(RC(F2))  &Hold_on_Bitch LA(LS(RC(F3))) LS(RC(F3))    &Hold_on_Bitch LA(LS(RC(F1))) LS(RC(F1))  &Hold_on_Bitch LS(LA(RC(F2))) LS(RC(F2))  &Hold_on_Bitch LA(LS(RC(F3))) LS(RC(F3))  &layermove 0 1  &trans
+            &to 0   &trans  &Hold_on_Bitch LA(LS(RC(F4))) LS(RC(F4))  &Hold_on_Bitch LA(LS(RC(F5))) LS(RC(F5))  &Hold_on_Bitch LA(LS(RC(F6))) LS(RC(F6))    &Hold_on_Bitch LA(LS(RC(F4))) LS(RC(F4))  &Hold_on_Bitch LA(LS(RC(F5))) LS(RC(F5))  &Hold_on_Bitch LA(LS(RC(F6))) LS(RC(F6))  &trans          &trans
+&bt BT_CLR  &trans  &trans  &Hold_on_Bitch LA(LS(RC(F7))) LS(F7)      &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &trans                                      &Hold_on_Bitch LA(LS(RC(F7))) LS(RC(F7))  &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &kp RC(F9)                                &trans          &trans  &trans
+                            &kp BACKSPACE                             &trans                                    &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))    &Hold_on_Bitch LA(LS(RC(F7))) LS(RC(F7))  &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &kp BACKSPACE
             >;
         };
 
@@ -129,9 +129,9 @@
 
         sym_func {
             bindings = <
-         &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4      &kp NUMBER_5     &kp NUMBER_6   &kp N7           &kp N8   &kp NUMBER_0  &kp MINUS
-         &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH         &kp F6         &kp F7           &kp F8   &kp F9        &kp F10
-&kp ESC  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSPACE    &kp F11        &kp F12          &kp RC(F1)  &kp RC(F2)       &kp RC(F3)    &kp EQUAL
+         &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4      &kp NUMBER_5     &kp NUMBER_6   &kp N7           &kp N8      &kp NUMBER_0  &kp MINUS
+         &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH         &kp F6         &kp F7           &kp F8      &kp F9        &kp F10
+&kp ESC  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSPACE    &kp F11        &kp F12          &kp RC(F1)  &kp RC(F2)    &kp RC(F3)  &kp EQUAL
                                               &trans                 &trans            &to 0            &kp BACKSPACE  &kp RIGHT_SHIFT  &none
             >;
         };
