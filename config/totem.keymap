@@ -7,12 +7,12 @@
         compatible = "zmk,combos";
 
         Number1 {
-            bindings = <&Hold_on_Bitch LA(F13) F13>;
+            bindings = <&Hold_on_Bitch LA(RC(F1)) RC(F1)>;
             key-positions = <15 6>;
         };
 
         Number3 {
-            bindings = <&Hold_on_Bitch LA(F15) F15>;
+            bindings = <&Hold_on_Bitch LA(RC(F3)) RC(F3)>;
             key-positions = <6 17>;
         };
 
@@ -27,17 +27,17 @@
         };
 
         Number8 {
-            bindings = <&Hold_on_Bitch LA(F20) F20>;
+            bindings = <&Hold_on_Bitch LA(RC(F8)) RC(F8)>;
             key-positions = <15 17>;
         };
 
         Number7 {
-            bindings = <&Hold_on_Bitch F21 F17>;
+            bindings = <&Hold_on_Bitch RC(F9) RC(F5)>;
             key-positions = <18 15>;
         };
 
         Number7mk2 {
-            bindings = <&kp F21>;
+            bindings = <&kp RC(F9)>;
             key-positions = <18 17>;
         };
 
@@ -93,28 +93,28 @@
 
         base {
             bindings = <
-               &Long_holding LS(LC(W)) F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8                 &kp KP_NUMBER_9    &Hold_on_Bitch LA(F13) F13  &Hold_on_Bitch LA(F14) F14  &Hold_on_Bitch LA(F15) F15  &mo 1                         &kp BACKSPACE
-               &Long_holding LS(LC(D)) NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5                 &kp KP_NUMBER_6    &Hold_on_Bitch LA(F16) F16  &Hold_on_Bitch LA(F17) F17  &Hold_on_Bitch LA(F18) F18  &Hold_on_Bitch LA(F17) F17    &bt BT_SEL 2
-&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2                 &kp KP_NUMBER_3    &Hold_on_Bitch LA(F19) F19  &Hold_on_Bitch LA(F20) F20  &Long_holding F22 F21       &Long_holding F21 KP_NUMLOCK  &to 5          &none
-                                                                 &kp ENTER        &Hold_on_Bitch DOT KP_NUMBER_0  &mo 2              &Hold_on_Bitch LA(F19) F19  &Hold_on_Bitch LA(F20) F20  &kp RIGHT_ALT
+               &Long_holding LS(LC(W)) F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8                 &kp KP_NUMBER_9    &Hold_on_Bitch LA(RC(F1)) RC(F1)  &Hold_on_Bitch LA(RC(F2)) RC(F2)  &Hold_on_Bitch LA(RC(F3)) RC(F3)  &mo 1                         &kp BACKSPACE
+               &Long_holding LS(LC(D)) NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5                 &kp KP_NUMBER_6    &Hold_on_Bitch LA(RC(F4)) RC(F4)  &Hold_on_Bitch LA(RC(F5)) RC(F5)  &Hold_on_Bitch LA(RC(F6)) RC(F6)  &Hold_on_Bitch LA(RC(F5)) RC(F5)    &bt BT_SEL 2
+&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2                 &kp KP_NUMBER_3    &Hold_on_Bitch LA(RC(F7)) RC(F7)  &Hold_on_Bitch LA(RC(F8)) RC(F8)  &Long_holding RC(F10) RC(F9)      &Long_holding RC(F9) KP_NUMLOCK  &to 5          &none
+                                                                 &kp ENTER        &Hold_on_Bitch DOT KP_NUMBER_0  &mo 2              &Hold_on_Bitch LA(RC(F7)) RC(F7)  &Hold_on_Bitch LA(RC(F8)) RC(F8)  &kp RIGHT_ALT
             >;
         };
 
         Getting_in_ROOM {
             bindings = <
-        &trans  &trans  &Hold_on_Bitch LA(LS(F13)) LS(F13)  &Hold_on_Bitch LA(LS(F14)) LS(F14)  &Hold_on_Bitch LA(LS(F15)) LS(F15)    &Hold_on_Bitch LA(LS(F13)) LS(F13)  &Hold_on_Bitch LS(LA(F14)) LS(F14)  &Hold_on_Bitch LA(LS(F15)) LS(F15)  &layermove 0 1  &trans
-        &to 0   &trans  &Hold_on_Bitch LA(LS(F16)) LS(F16)  &Hold_on_Bitch LA(LS(F17)) LS(F17)  &Hold_on_Bitch LA(LS(F18)) LS(F18)    &Hold_on_Bitch LA(LS(F16)) LS(F16)  &Hold_on_Bitch LA(LS(F17)) LS(F17)  &Hold_on_Bitch LA(LS(F18)) LS(F18)  &trans          &trans
-&trans  &trans  &trans  &Hold_on_Bitch LA(LS(F19)) LS(F7)   &Hold_on_Bitch LA(LS(F20)) LS(F20)  &trans                                &Hold_on_Bitch LA(LS(F19)) LS(F19)  &Hold_on_Bitch LA(LS(F20)) LS(F20)  &kp F21                             &trans          &trans  &trans
-                        &kp BACKSPACE                       &trans                              &Hold_on_Bitch LA(LS(F20)) LS(F20)    &Hold_on_Bitch LA(LS(F19)) LS(F19)  &Hold_on_Bitch LA(LS(F20)) LS(F20)  &kp BACKSPACE
+        &trans  &trans  &Hold_on_Bitch LA(LS(RC(F1))) LS(RC(F1))  &Hold_on_Bitch LA(LS(RC(F2))) LS(RC(F2))  &Hold_on_Bitch LA(LS(RC(F3))) LS(RC(F3))    &Hold_on_Bitch LA(LS(RC(F1))) LS(RC(F1))  &Hold_on_Bitch LS(LA(RC(F2))) LS(RC(F2))  &Hold_on_Bitch LA(LS(RC(F3))) LS(RC(F3))  &layermove 0 1  &trans
+        &to 0   &trans  &Hold_on_Bitch LA(LS(RC(F4))) LS(RC(F4))  &Hold_on_Bitch LA(LS(RC(F5))) LS(RC(F5))  &Hold_on_Bitch LA(LS(RC(F6))) LS(RC(F6))    &Hold_on_Bitch LA(LS(RC(F4))) LS(RC(F4))  &Hold_on_Bitch LA(LS(RC(F5))) LS(RC(F5))  &Hold_on_Bitch LA(LS(RC(F6))) LS(RC(F6))  &trans          &trans
+&trans  &trans  &trans  &Hold_on_Bitch LA(LS(RC(F7))) LS(F7)      &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &trans                                      &Hold_on_Bitch LA(LS(RC(F7))) LS(RC(F7))  &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &kp RC(F9)                                &trans          &trans  &trans
+                        &kp BACKSPACE                             &trans                                    &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))    &Hold_on_Bitch LA(LS(RC(F7))) LS(RC(F7))  &Hold_on_Bitch LA(LS(RC(F8))) LS(RC(F8))  &kp BACKSPACE
             >;
         };
 
         quit_and_login {
             bindings = <
-            &to 3           &to 5   &trans           &trans           &kp F24            &kp LC(F13)  &kp LC(F14)  &kp LC(F15)  &trans  &trans
-            &bt BT_CLR_ALL  &trans  &trans           &kp KP_NUMBER_8  &trans             &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &trans  &bt BT_CLR_ALL
-&sys_reset  &bootloader     &trans  &kp KP_NUMBER_7  &trans           &kp KP_NUMBER_9    &kp LC(F19)  &kp LC(F20)  &kp F21      &trans  &bt BT_CLR      &to 0
-                                    &trans           &trans           &trans             &kp LC(F19)  &kp LC(F20)  &trans
+            &to 3           &to 5   &trans           &trans           &kp RC(F12)        &kp LC(RC(F1))  &kp LC(RC(F2))  &kp LC(RC(F3))  &trans  &trans
+            &bt BT_CLR_ALL  &trans  &trans           &kp KP_NUMBER_8  &trans             &kp LC(RC(F4))  &kp LC(RC(F5))  &kp LC(RC(F6))  &trans  &bt BT_CLR_ALL
+&sys_reset  &bootloader     &trans  &kp KP_NUMBER_7  &trans           &kp KP_NUMBER_9    &kp LC(RC(F7))  &kp LC(RC(F8))  &kp RC(F9)      &trans  &bt BT_CLR      &to 0
+                                    &trans           &trans           &trans             &kp LC(RC(F7))  &kp LC(RC(F8))  &trans
             >;
         };
 
@@ -131,7 +131,7 @@
             bindings = <
          &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4      &kp NUMBER_5     &kp NUMBER_6   &kp N7           &kp N8   &kp NUMBER_0  &kp MINUS
          &kp TAB        &kp LBKT              &kp RBKT               &kp ENTER         &kp BSLH         &kp F6         &kp F7           &kp F8   &kp F9        &kp F10
-&kp ESC  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSPACE    &kp F11        &kp F12          &kp F13  &kp F14       &kp F15    &kp EQUAL
+&kp ESC  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSPACE    &kp F11        &kp F12          &kp RC(F1)  &kp RC(F2)       &kp RC(F3)    &kp EQUAL
                                               &trans                 &trans            &to 0            &kp BACKSPACE  &kp RIGHT_SHIFT  &none
             >;
         };
