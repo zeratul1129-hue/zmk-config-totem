@@ -95,7 +95,7 @@
             bindings = <
                &Long_holding LS(LC(W)) F         &kp LEFT_SHIFT  &kp KP_NUMBER_7  &kp KP_NUMBER_8                 &kp KP_NUMBER_9    &Hold_on_Bitch LA(RC(F1)) RC(F1)  &Hold_on_Bitch LA(RC(F2)) RC(F2)  &Hold_on_Bitch LA(RC(F3)) RC(F3)  &mo 1                             &kp BACKSPACE
                &Long_holding LS(LC(D)) NUMBER_1  &kp LC(C)       &kp KP_NUMBER_4  &kp KP_NUMBER_5                 &kp KP_NUMBER_6    &Hold_on_Bitch LA(RC(F4)) RC(F4)  &Hold_on_Bitch LA(RC(F5)) RC(F5)  &Hold_on_Bitch LA(RC(F6)) RC(F6)  &Hold_on_Bitch LA(RC(F5)) RC(F5)  &bt BT_SEL 2
-&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2                 &kp KP_NUMBER_3    &Hold_on_Bitch LA(RC(F7)) RC(F7)  &Hold_on_Bitch LA(RC(F8)) RC(F8)  &Long_holding RC(F10) RC(F9)      &Long_holding RC(F9) KP_NUMLOCK   &to 5          &none
+&kp BACKSLASH  &Long_holding LC(LS(D)) NUMBER_2  &kp LC(V)       &kp KP_NUMBER_1  &kp KP_NUMBER_2                 &kp KP_NUMBER_3    &Hold_on_Bitch LA(RC(F7)) RC(F7)  &Hold_on_Bitch LA(RC(F8)) RC(F8)  &Long_holding RC(F10) RC(F9)      &Long_holding RC(F9) KP_NUMLOCK   &to 5          &Hold_on_Bitch F6 F2
                                                                  &kp ENTER        &Hold_on_Bitch DOT KP_NUMBER_0  &mo 2              &Hold_on_Bitch LA(RC(F7)) RC(F7)  &Hold_on_Bitch LA(RC(F8)) RC(F8)  &kp RIGHT_ALT
             >;
         };
